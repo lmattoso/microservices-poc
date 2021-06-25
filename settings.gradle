@@ -1,0 +1,6 @@
+rootProject.name = 'microservices-poc'
+
+include 'public'
+
+include 'provider-service'
+include 'store-service'
