@@ -1,2 +1,21 @@
 server:
   port: 8081
+
+spring:
+  application:
+    name: provider-service
+  datasource:
+    password: postgres
+    username: postgres
+    url: "jdbc:postgresql://localhost:5432/microservices"
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
